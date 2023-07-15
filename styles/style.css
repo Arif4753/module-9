@@ -81,13 +81,106 @@ nav li a {
     display: none;
 }
 
+
+
+/* featured section start */
+
+.featured-section{
+
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+}
+.teams-img img{
+    
+    width: 242px; 
+    height: 242px;
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-left: 240px;
+}
+.features-description{
+    color:#727272;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+width: 425px;
+}
+.featured-content{
+    padding: 0 70px;
+}
+.teams-title{
+    color:#131313;
+font-size: 2.8rem;
+font-weight: 700;
+}
+.Quick{
+    color:#727272;
+font-size: 2.8rem;
+font-weight: 500;
+}
+.Features{
+    color: #FF900E;
+font-size: 2.8rem;
+font-weight: 700;
+}
+/* featured section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Styles */
 /* mobile devices */
 @media screen and (max-width:576px) {
     header{
         padding: 10px;
     }
-    nav {
+    nav ,.featured-section{
         flex-direction: column;
       }
       .banner-title {
@@ -112,14 +205,36 @@ nav li a {
     font-size: 1rem;
     margin-top: 25px;
   }
-  
+  .teams-img{
+    grid-template-columns: 1fr;
+    margin-left: 102px;
+  }
+  .featured-section{
+    align-items: stretch;
+  }
+  .featured-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .features-description{
+    width: auto;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .btn{
+    align-self: center;
+  }
+  .teams-title{
+    text-align: center;
+  }
 }
 /* Tablet Devices */
 @media screen and (min-width:576px) and (max-width:960px){
     header{
         padding: 10px;
     }
-    nav {
+    nav , .featured-section{
         flex-direction: column;
       }
       nav > ul {
@@ -139,5 +254,12 @@ nav li a {
         font-size: 2rem;
         font-weight: 700;
       }
-
+      .teams-img{
+        grid-template-columns: 1fr;
+        margin-left: 0;
+      }
+      .featured-content{
+        margin-top: 50px;
+        text-align: center;
+      }
 }
